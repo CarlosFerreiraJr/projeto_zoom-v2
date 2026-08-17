@@ -257,7 +257,6 @@ border: 2px solid #1fabb5;
    MEDIA QUERY NO FINAL DO ARQUIVO (CORRIGIDA)
    ========================================================= */
 @media (max-width: 600px) {        
-    @media (max-width: 600px) {        
     html, body {
         margin-top: 10px;
         padding: 0;
@@ -353,5 +352,4 @@ border: 2px solid #1fabb5;
         max-width: 350px;
         height: auto;
     }
-}
 }
