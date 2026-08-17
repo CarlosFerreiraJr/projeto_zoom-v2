@@ -1,57 +1,48 @@
-# 🚀 Landing Page - Clone Zoom (Header Dinâmico)
+# 🚀 Página Inicial Zoom (Landing Page Responsiva)
 
-Uma interface moderna e responsiva inspirada na Landing Page do **Zoom**, desenvolvida com **HTML5, CSS3 puro e JavaScript Vanilla**. O grande destaque do projeto é o **cabeçalho inteligente (sticky/fixed header)** que altera dinamicamente sua cor, bordas, estilos de botões e a logomarca conforme a navegação da página.
-
----
-
-## 📸 Demonstração das Funcionalidades
-
-- **Topo com Fundo Escuro:** Header com fundo transparente, texto/links em branco e logo na versão clara.
-- **Rolagem para Fundo Claro:** Ao rolar a página para a seção branca, o header assume fundo branco opaco, adiciona sombra suave, altera a cor dos links e troca a logo para a versão escura.
-- **Borda Inferior Alinhada:** A linha divisória do menu acompanha a largura do container interno, mantendo um visual limpo de ponta a ponta.
+Uma recriação moderna, semântica e totalmente responsiva da landing page do **Zoom**, desenvolvida com **HTML5** e **CSS3** utilizando técnicas avançadas de layout como **CSS Grid** e **Flexbox**.
 
 ---
 
-## ✨ Funcionalidades Principais
+## 📌 Sobre o Projeto
 
-* [x] **Hero Section com Degradê Duplo:** Combinação de `radial-gradient` e `linear-gradient` reproduzindo o brilho central do Zoom.
-* [x] **Header Fixo Responsivo (`position: fixed`):** Cabeçalho mantido no topo durante toda a navegação.
-* [x] **Troca Dinâmica de Tema via JavaScript:** Monitoramento do evento `window.scrollY` para adicionar a classe `.rolado`.
-* [x] **Troca da Logomarca no Scroll:** Alteração do atributo `src` da imagem da logo para garantir contraste ideal.
-* [x] **Efeitos de Hover Avançados:** Botões com cantos arredondados, transições suaves (`transition`) e feedbacks visuais ao passar o mouse.
+Este projeto consiste na construção de uma página de apresentação fluida, projetada para oferecer uma excelente experiência de navegação tanto em monitores de alta resolução quanto em dispositivos móveis.
 
 ---
 
-## 🛠️ Tech Stack & Ferramentas
+## ⚙️ Funcionalidades e Tecnologias Aplicadas
 
-- **HTML5:** Estruturação semântica da página (`<header>`, `<nav>`, `<main>`, `<section>`).
-- **CSS3:** 
-  - Flexbox para alinhamentos e distribuições no cabeçalho.
-  - Gradientes CSS (`linear-gradient` e `radial-gradient`).
-  - Efeitos de transição (`transition`) e sombras (`box-shadow`).
-- **JavaScript (Vanilla):** Manipulação do DOM em tempo de execução sem dependência de bibliotecas externas.
-- **VS Code (Visual Studio Code):** Editor de código fonte e ambiente de versionamento.
-- **Git & GitHub:** Versionamento de código e hospedagem do repositório integrados diretamente no VS Code.
-
----
-
-## 💻 Publicação e Controle de Versão via VS Code
-
-A integração, versionamento e publicação no **GitHub** foram realizados inteiramente através do **Visual Studio Code**, utilizando a interface gráfica de **Source Control (Controle do Fonte)** nativa da IDE:
-
-1. **Inicialização:** Repositório Git inicializado diretamente no painel do VS Code.
-2. **Commit:** Alterações e staging organizados via interface visual.
-3. **Publish to GitHub:** Publicação direta do repositório para o GitHub com autenticação integrada, dispensando o uso do terminal para os comandos iniciais de `git push`.
+* **HTML5 Semântico:** Estruturação limpa utilizando tags próprias como `<header>`, `<nav>`, `<main>`, `<section>` e `<footer>` para melhor acessibilidade e SEO.
+* **CSS Grid Layout:** Organização das seções principais através de `grid-template-areas` e colunas dinâmicas para alinhar conteúdos e imagens com facilidade.
+* **Flexbox:** Alinhamento fino de elementos internos, incluindo centralização do menu de navegação, distribuição de botões e empilhamento dos blocos.
+* **Design Responsivo (Mobile First / Media Queries):**
+  * Adaptação automática do menu para telas menores ($\le 600\text{px}$).
+  * Transição do cabeçalho de uma exibição horizontal para um fluxo vertical organizado.
+  * Reorganização das imagens e textos para exibição centralizada em celulares.
+* **Imagens Fluida e Tipografia Dinâmica:**
+  * Uso de `max-width: 100%` e `height: auto` para garantir que as imagens encolham sem distorcer.
+  * Transições suaves (`transition: all 0.3s ease`) nos botões e links interativos (*hover effects*).
 
 ---
 
-## 📂 Estrutura de Pastas do Projeto
+## 🛠️ Estrutura de Arquivos
 
 ```text
+.
+├── index.html         # Estrutura principal da página
 ├── css/
-│   └── estilo.css          # Estilos globais e estados do header
-├── img/
-│   ├── logo-zoom-white.png # Logo para fundo escuro
-│   └── logo.svg            # Logo para fundo claro
-├── index.html              # Estrutura principal da aplicação
-└── README.md               # Documentação do projeto
+│   └── estilo.css     # Estilização completa, Grid, Flexbox e Media Queries
+└── img/               # Vetores e imagens do projeto (logos e banners)
+🚀 Como Executar o Projeto
+Clone este repositório:
+
+Bash
+git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
+Navegue até a pasta do projeto:
+
+Bash
+cd NOME-DO-REPOSITORIO
+Abra o arquivo index.html no seu navegador ou utilize a extensão Live Server do VS Code.
+
+
+---
