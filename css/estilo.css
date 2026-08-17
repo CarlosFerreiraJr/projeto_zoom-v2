@@ -1,0 +1,357 @@
+html, body {
+    margin-top: 10px;
+    padding: 0;
+    margin-left: 30px;
+    margin-right: 40px;
+    background-color: white;
+}
+
+.containter {    
+    max-width: 1200px;   
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'cabecalho cabecalho'
+        'capa-conteudo capa-imagem'
+        'organizacao-imagem organizacao-conteudo'
+        'rodape rodape'
+    ;  
+    row-gap: 20px; 
+    column-gap: 20px; 
+}
+
+header {
+    grid-area: cabecalho; 
+    display: flex;
+    align-items: center;     
+    padding: 0 10px; 
+}
+
+header a {
+    display: flex;
+    align-items: center;     
+    justify-content: center;    
+    text-decoration: none;
+}
+
+.menu { 
+    grid-area: menu-nav; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;       
+    height: 40px; 
+}
+
+section#capa-conteudo {
+    grid-area: capa-conteudo;     
+    width: 100%;
+    max-width: 440px;    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+    height: auto;
+    min-height: 300px;
+}
+
+section#capa-conteudo h2 { 
+    font-size: 26px; 
+    margin-bottom: 0;
+
+} 
+section#capa-conteudo p { font-size: 12px; }  
+section#capa-conteudo a {
+    text-decoration: none;
+    background: #0B5CFF;
+    border: 2px solid #0B5CFF;  
+    color: white;
+    border-radius: 25px;
+    padding: 5px 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    font-size: 12px;
+    transition: all 0.3s ease;
+}  
+
+section#capa-conteudo a:hover {
+    color: white;
+    background: #1fabb5;
+    border: 2px solid #1fabb5;
+}
+
+section#capa-conteudo span {
+    color: #0B5CFF;  
+}
+
+section#capa-imagem {
+    grid-area: capa-imagem;     
+}
+
+section#organizacao-imagem {
+grid-area: organizacao-imagem;  
+}
+
+section#capa-imagem > img, section#organizacao-imagem > img {
+    max-width: 100%;
+    width: 400px;  
+    height: auto;
+}
+
+section#organizacao-conteudo h3 { 
+    font-size: 26px; 
+    margin-bottom: 0;
+}  
+section#organizacao-conteudo p { font-size: 12px; }  
+section#organizacao-conteudo a {
+    text-decoration: none;
+    background: #0B5CFF;
+    border: 2px solid #0B5CFF;  
+    color: white;
+    border-radius: 25px;
+    padding: 5px 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    font-size: 12px;
+    transition: all 0.3s ease;
+}  
+
+section#organizacao-conteudo a:hover {
+    color: white;
+    background: #1fabb5;
+    border: 2px solid #1fabb5;
+}
+
+section#organizacao-conteudo {
+    grid-area: organizacao-conteudo;  
+    width: 100%;
+    max-width: 440px;    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+    height: auto;
+    min-height: 300px;  
+}
+
+.botoes-cabecalho {
+    grid-area: cabecalho-direita;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+    white-space: nowrap;
+}
+
+nav {    
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;        
+    justify-content: center;    
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a:link, 
+nav ul a:visited {
+    text-decoration: none;    
+    padding: 5px 12px;
+    color: black;    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    font-size: 12px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+nav ul a:hover {    
+    color: white; 
+    background: #1fabb5;
+    border: 2px solid #1fabb5;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.botao {
+    white-space: nowrap;
+    text-decoration: none;
+    background: white;
+    border: 2px solid #0B5CFF;  
+    color: blue;
+    border-radius: 25px;
+    padding: 5px 15px;
+    margin-left: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.botao.destaque {  
+    color: white; 
+    background: #0B5CFF;
+    border: 2px solid #0B5CFF;
+}
+
+.botao.destaque:hover, .botao:hover {  
+    color: white; 
+    background: #1fabb5;
+    border: 2px solid #1fabb5;
+}
+
+footer {
+    grid-area: rodape;    
+    height: 40px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+footer p { 
+   margin: 0;              /* Remove a distância entre as linhas */
+   line-height: 2;       /* Deixa o espaçamento entre linhas bem compacto */ 
+   font-weight: bold;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;        
+   font-size: 12px;
+}
+
+footer a { 
+text-decoration: none;
+background: white;
+border: 2px solid #0B5CFF;  
+color: #0B5CFF;
+border-radius: 25px;
+padding: 5px 12px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+font-size: 12px;
+transition: all 0.3s ease; 
+}
+
+footer a.destaque { 
+background: #0B5CFF;
+border: 2px solid #0B5CFF;  
+color: white;
+}
+
+footer a:hover { 
+color: white; 
+background: #1fabb5;
+border: 2px solid #1fabb5;
+}
+
+/* =========================================================
+   MEDIA QUERY NO FINAL DO ARQUIVO (CORRIGIDA)
+   ========================================================= */
+@media (max-width: 600px) {        
+    @media (max-width: 600px) {        
+    html, body {
+        margin-top: 10px;
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: white;
+    }
+
+    .containter {
+        display: grid;   
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+        row-gap: 20px;
+        grid-template-areas: 
+            'cabecalho'
+            'capa-conteudo' 
+            'capa-imagem'
+            'organizacao-imagem' 
+            'organizacao-conteudo'
+            'rodape';
+    }
+
+    /* 1. Empilha todos os blocos do topo verticalmente */
+    header {
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 15px;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    /* 2. Centraliza a logo */
+    header a {
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* 3. Coloca os links do menu lado a lado (horizontal) */
+    nav {
+        width: 100%;
+        height: auto !important;
+    }
+
+    nav ul {
+        flex-direction: row !important; /* Força os links na horizontal */
+        flex-wrap: wrap;               /* Quebra linha suavemente se a tela for muito pequena */
+        justify-content: center;
+        gap: 8px;
+        padding: 0;
+        height: auto !important;
+    }
+
+    /* 4. Empilha e centraliza os botões */
+    .botoes-cabecalho {
+        flex-direction: column !important;
+        width: 100%;
+        height: auto !important;
+        gap: 8px;
+        align-items: center;
+        white-space: normal;
+    }
+
+    .botao {
+        margin: 0 !important;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 280px; /* Garante que o botão caiba em qualquer celular */
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    /* 5. Ajustes gerais de texto e imagens para o mobile */
+    section#capa-conteudo, 
+    section#organizacao-conteudo {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        min-height: auto;
+    }
+
+    section#capa-imagem, 
+    section#organizacao-imagem {
+        display: flex;
+        justify-content: center;
+    }
+
+    section#capa-imagem > img, 
+    section#organizacao-imagem > img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+}
+}
